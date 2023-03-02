@@ -19,7 +19,7 @@
       <section class="teatro">
         <h1>PROXIMAS OBRAS DE TEATRO</h1>
 	<ul>
-          <xsl:apply-templates select="teatro[substring(fechahora/@dia,1,7)]">
+          <xsl:apply-templates select="teatro[substring(fechahora/@dia,1,7)='2023-01']">
             <xsl:sort select="fechahora/@dia"></xsl:sort>
           </xsl:apply-templates>
 	</ul>
